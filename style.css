@@ -21,3 +21,7 @@ h1 {
 .btn:hover {
   background-color: darkblue;
 }
+
+a {
+  font-weight: bold;
+}
