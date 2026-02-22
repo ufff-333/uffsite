@@ -7,3 +7,20 @@ body {
 h1 {
   color: #007bff;
 }
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
+
+a {
+  font-weight: bold;
+}
