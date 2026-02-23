@@ -22,6 +22,28 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.remove("flash");
     }, 300);
 
+    document.addEventListener("DOMContentLoaded", function () {
+
+  const title2 = document.getElementById("title2");
+
+  // Make it look clickable
+  title2.style.cursor = "pointer";
+
+  title2.addEventListener("click", function () {
+
+    // Smooth scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    // Add flash effect
+    document.body.classList.add("flash");
+
+    setTimeout(() => {
+      document.body.classList.remove("flash");
+    }, 300);
+
   });
 
 });
