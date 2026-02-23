@@ -1,9 +1,27 @@
 console.log("Hello from script.js!");
 
-const title = document.getElementById("title");
+document.addEventListener("DOMContentLoaded", function () {
 
-title.style.cursor = "pointer"; // shows it's clickable
+  const title = document.getElementById("title");
 
-title.addEventListener("click", function () {
-  location.reload();
+  // Make it look clickable
+  title.style.cursor = "pointer";
+
+  title.addEventListener("click", function () {
+
+    // Smooth scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    // Add flash effect
+    document.body.classList.add("flash");
+
+    setTimeout(() => {
+      document.body.classList.remove("flash");
+    }, 300);
+
+  });
+
 });
