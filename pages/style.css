@@ -24,3 +24,11 @@ h1 {
 a {
   font-weight: bold;
 }
+.flash {
+  animation: flashEffect 0.3s ease;
+}
+
+@keyframes flashEffect {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
