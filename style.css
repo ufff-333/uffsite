@@ -33,3 +33,16 @@ a {
   0% { opacity: 0.6; }
   100% { opacity: 1; }
 }
+.btn2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: thin;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
