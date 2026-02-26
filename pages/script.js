@@ -3,25 +3,40 @@ console.log("Hello from script.js!");
 document.addEventListener("DOMContentLoaded", function () {
 
   const title = document.getElementById("title");
+  const title2 = document.getElementById("title2");
 
-  // Make it look clickable
-  title.style.cursor = "pointer";
+  if (title) {
+    title.style.cursor = "pointer";
 
-  title.addEventListener("click", function () {
+    title.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
 
-    // Smooth scroll to top
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+      document.body.classList.add("flash");
+
+      setTimeout(() => {
+        document.body.classList.remove("flash");
+      }, 300);
     });
+  }
 
-    // Add flash effect
-    document.body.classList.add("flash");
+  if (title2) {
+    title2.style.cursor = "pointer";
 
-    setTimeout(() => {
-      document.body.classList.remove("flash");
-    }, 300);
+    title2.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
 
-  });
+      document.body.classList.add("flash");
+
+      setTimeout(() => {
+        document.body.classList.remove("flash");
+      }, 300);
+    });
+  }
 
 });
