@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoneKick – Der neue Sport</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🏔️ StoneKick</h1>
+    <p>Der Sport, bei dem du Steine einen Hügel hinauf kickst!</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">Start</button>
+    <button onclick="showSection('clubs')">Vereine</button>
+    <button onclick="showSection('game')">Spiel</button>
+  </nav>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Willkommen bei StoneKick</h2>
+      <p>Kicke Steine den Hügel hinauf und werde Champion!</p>
+    </section>
+
+    <section id="clubs">
+      <h2>Vereine</h2>
+      <ul id="clubList"></ul>
+      <input type="text" id="clubInput" placeholder="Neuen Verein hinzufügen">
+      <button onclick="addClub()">Hinzufügen</button>
+    </section>
+
+    <section id="game">
+      <h2>Mini-Spiel</h2>
+      <p>Klicke, um den Stein den Hügel hochzukicken!</p>
+      <div id="hill">
+        <div id="stone"></div>
+      </div>
+      <button onclick="kickStone()">Kick!</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
